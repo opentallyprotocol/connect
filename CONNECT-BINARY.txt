@@ -1,0 +1,23 @@
+OpenTally Connect — Binary License
+Copyright (c) 2026 StablePay LLC. All rights reserved.
+
+StablePay LLC grants you a worldwide, royalty-free, non-exclusive license to
+use the unmodified opentally-connect binaries to integrate applications with
+OpenTally, and to copy and redistribute those binaries unmodified together
+with this license, SHA256SUMS, and THIRD-PARTY-NOTICES.txt.
+
+This grant does not license the CLI implementation source or the hosted service
+implementation. You may not remove these notices or represent a modified build
+as an official OpenTally release. No trademark license is granted.
+
+Third-party components remain governed by their own licenses, reproduced in
+THIRD-PARTY-NOTICES.txt. Nothing here limits rights granted by those licenses
+or by applicable law. The separately distributed Skill and thin adapters are
+covered by their accompanying MIT license, not this binary license.
+
+THE BINARIES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE
+BINARIES. Service acceptance does not establish issuance or offline verification,
+and no assertion is made that all real billing events have been captured.
