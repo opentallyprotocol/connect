@@ -1,6 +1,6 @@
 # OpenTally Connect
 
-Connect your application's real token billing records to the hosted OpenTally ledger.
+Connect your application's real token billing records to the [official OpenTally service](https://opentally.linkex.ai/).
 Give this page to a coding assistant in your project and say “connect this project's
 billing usage to OpenTally.” The CLI and HTTPS API both work independently of the model provider.
 
