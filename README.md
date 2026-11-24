@@ -18,7 +18,7 @@ for the user's development environment.
 - [Download the CLI](https://github.com/opentallyprotocol/connect/releases/latest): Linux/macOS, amd64/arm64. Windows uses WSL and its Linux filesystem.
 - [Agent Skill](skills/opentally-integrate/SKILL.md): install in your coding agent's supported skill directory, or give the instructions to your coding agent.
 - [TypeScript adapter](integrations/typescript/index.ts) / [Python adapter](integrations/python/opentally_queue.py): thin wrappers around the installed CLI.
-- [Service guide](https://opentally.linkex.ai/agent/guide.md) and [quickstart](https://developers.linkex.cc/docs/quickstart/#agent-integration).
+- [Full integration guide on GitHub](GUIDE.md) · [Service copy](https://opentally.linkex.ai/agent/guide.md) · [Developer quickstart](https://developers.linkex.cc/docs/quickstart/#agent-integration).
 
 ## Projects with an existing production exporter
 
@@ -63,6 +63,7 @@ Client-specific authenticated ChatGPT/Claude acceptance is not yet claimed.
 ## License boundaries
 
 `LICENSE` (MIT) applies to the Skill and thin adapter source, and this README.
+`GUIDE.md` is published under [CC BY 4.0](LICENSES/CC-BY-4.0.txt).
 `CONNECT-BINARY.txt` applies to CLI release binaries. `install-connect.sh` is
 CC0-1.0, as marked in the script. Third-party dependency terms are shipped with
 each release. The CLI and hosted service implementation source are private and
