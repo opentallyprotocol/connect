@@ -4,7 +4,10 @@ Connect your application's real token billing records to the [official OpenTally
 Give this page to a coding assistant in your project and say “connect this project's
 billing usage to OpenTally.” The CLI and HTTPS API both work independently of the model provider.
 
-把本页网址发给能访问项目的 AI 助手，说「把当前项目的计费用量接入 OpenTally」。
+在能访问项目的 AI 助手里发送一句话即可开始。普通网页聊天也可以从这个链接了解所需的项目权限。
+
+> 对接 https://opentally.linkex.ai/agent/guide.md。
+
 先找业务系统中真实的用量记录，再在 OpenTally 网页用邮箱登录、选择工作区并授权。
 如果项目没有挂载到对话，请先确认用量记录在哪里。
 
