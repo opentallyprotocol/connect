@@ -1,6 +1,19 @@
 # OpenTally Connect
 
-AI-assisted integration with the hosted OpenTally billing ledger.
+Connect your application's real token billing records to the hosted OpenTally ledger.
+Give this page to a coding assistant in your project and say “connect this project's
+billing usage to OpenTally.” The CLI and HTTPS API both work independently of the model provider.
+
+把本页网址发给能访问项目的 AI 助手，说「把当前项目的计费用量接入 OpenTally」。
+先找业务系统中真实的用量记录，再在 OpenTally 网页用邮箱登录、选择工作区并授权。
+如果项目没有挂载到对话，请先确认用量记录在哪里。
+
+In a terminal on the user's machine, follow the CLI steps below. For a hosted client
+with a reachable OAuth callback, use the [HTTP API contract](https://opentally.linkex.ai/agent/openapi.yaml)
+and [authorization metadata](https://opentally.linkex.ai/.well-known/oauth-authorization-server)
+with PKCE S256 and resource `https://opentally.linkex.ai/agent`. Read the selected
+workspace and field catalog first. A web-only assistant can provide the commands
+for the user's development environment.
 
 - [Download the CLI](https://github.com/opentallyprotocol/connect/releases/latest): Linux/macOS, amd64/arm64. Windows uses WSL and its Linux filesystem.
 - [Agent Skill](skills/opentally-integrate/SKILL.md): install in your coding agent's supported skill directory, or give the instructions to your coding agent.
@@ -20,10 +33,12 @@ Run `opentally-connect help`. Then, for the hosted production service:
 
 ```sh
 opentally-connect login -server https://opentally.linkex.ai -auth auth.json \
-  -scope 'integration:read integration:preview pricing:publish credentials:create_ingest'
+  -scope 'integration:read'
+opentally-connect doctor -server https://opentally.linkex.ai -auth auth.json
+opentally-connect schema -server https://opentally.linkex.ai -auth auth.json
 ```
 
-Open the returned URL and authorize your chosen workspace. Never paste passwords,
+Open the returned URL and sign in to OpenTally. New users can register with a verifiable email or choose Google when the deployment offers it. Return to consent to select or create a workspace. After the callback your agent can run `doctor` and `schema`, then request more scopes when needed. Never paste passwords,
 verification codes or tokens into a chat. Auth/credential/queue files contain
 secrets or billing records: use a private local directory outside source control.
 The authoritative guide above covers pricing, preflight, credential creation,
