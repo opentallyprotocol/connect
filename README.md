@@ -20,6 +20,17 @@ for the user's development environment.
 - [TypeScript adapter](integrations/typescript/index.ts) / [Python adapter](integrations/python/opentally_queue.py): thin wrappers around the installed CLI.
 - [Service guide](https://opentally.linkex.ai/agent/guide.md) and [quickstart](https://developers.linkex.cc/docs/quickstart/#agent-integration).
 
+## Projects with an existing production exporter
+
+From the project terminal, read the [official homepage](https://opentally.linkex.ai/) and follow its guide.
+Use the issuer already responsible for that project's billing records. A deployment operator can point
+`OPENTALLY_PROJECT_CONTEXT` at a private local job description identifying the authorized issuer,
+the real outbox event, the already-approved credential provider and the permitted verification views.
+This is an optional handoff to the assistant. The CLI takes its inputs through its usual flags;
+it does not parse this variable. Keep credentials out of the description and source control.
+Check the issuer with `doctor` before preflight. Preserve the source ID when a running
+exporter may already have delivered the event.
+
 ## Install
 
 Download your platform's `opentally-connect_*`, `SHA256SUMS`, `CONNECT-BINARY.txt`
